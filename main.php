@@ -39,7 +39,7 @@ echo "=== Résultat final ===\n";
 echo "Vous avez obtenu $score / 50 points.\n";
 
 // Calcul du pourcentage
-$pourcentage = ($score / $nombreDeQuestions) * 100;
+$pourcentage = ($score / $nombreDeQuestions) * 10;
 echo "Votre score : " . $pourcentage . "% de bonnes réponses.\n";
 
 if ($score == 50) {

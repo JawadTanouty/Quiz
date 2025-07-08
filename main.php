@@ -15,6 +15,7 @@ return 0;
 
 // Variable pour stocker le score
 $score = 0;
+$nombreDeQuestions = 5;
 
 echo "=== Petit Quiz Algorithmique en PHP ===\n\n";
 
@@ -36,6 +37,10 @@ $score += poserQuestion("5. Quel mot-clé permet d'arrêter une boucle en PHP ?"
 // Résultat final
 echo "=== Résultat final ===\n";
 echo "Vous avez obtenu $score / 50 points.\n";
+
+// Calcul du pourcentage
+$pourcentage = ($score / $nombreDeQuestions) * 100;
+echo "Votre score : " . $pourcentage . "% de bonnes réponses.\n";
 
 if ($score == 50) {
 echo "Parfait, bravo !\n";
